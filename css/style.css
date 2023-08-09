@@ -109,11 +109,9 @@
   .navbar__purple-button {
     height: 50px;
     width: 55%;
-    font-size: 16px;
     font-weight: normal;
     border: none;
     border-radius: 25px;
-    color: white;
     background-image: linear-gradient(#FF79DA, #9356DC);
     margin-bottom: 50px;
   }
@@ -121,5 +119,80 @@
   .navbar__purple-button:hover {
     opacity: 0.7;
     transition: opacity 0.4s ease-in-out;
-    /* Reste a mettre la redirection du bouton vers les restaurants */
+  }
+
+  .navbar__purple-button--a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+
+/********** Section Fuctioning **********/
+
+  .functioning {
+    height: 420px;
+    padding: 30px 20px 0 20px;
+  }
+
+  .functioning__title {
+    margin-bottom: 30px;
+  }
+
+  .fuctionning__choices {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .choices__option {
+    width: 95%;
+    height: 60px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .option__content {
+    display: flex;
+    align-items: center;
+    margin-left: -13px;
+  }
+
+  .option__content-number {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #9356DC;
+    color: white;
+    line-height: 1.5em;
+  }
+
+  .option__content-icone--phone, .option__content-icone--list {
+    color: #7E7E7E;
+  }
+
+  .option__content-icone {
+    margin-right: 20px;
+  }
+
+  .option__content-icone--shop {
+    color: #9356DC;
+  }
+
+/********** Main **********/
+
+  .main {
+    height: 600px;
+    background-color: #F6F6F6;
+    padding: 30px 20px 0 20px;
+  }
+
+  .main__title {
+    margin-bottom: 30px;;
   }
