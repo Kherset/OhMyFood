@@ -6,6 +6,11 @@
     font-family: 'roboto', sans-serif ;
   }
 
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+  }
+
   h1 {
     font-size: 30px;
     font-family: 'shrikhand', sans-serif ;
@@ -28,7 +33,7 @@
 
   p {
     font-size: 18px;
-    font-weight: light;
+    font-weight: lighter;
   }
 
 /********** Header **********/
@@ -77,4 +82,44 @@
     width: 12px;
     height: 16px;
     margin-right: 20px;
+  }
+
+/********** Navbar **********/
+
+  .navbar {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F4F4;
+  }
+
+  .navbar__title {
+    width: 70%;
+    text-align: center;
+    margin: 40px 0 20px 0;
+  }
+
+  .navbar__content {
+    width: 81%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .navbar__purple-button {
+    height: 50px;
+    width: 55%;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    margin-bottom: 50px;
+  }
+
+  .navbar__purple-button:hover {
+    opacity: 0.7;
+    transition: opacity 0.4s ease-in-out;
+    /* Reste a mettre la redirection du bouton vers les restaurants */
   }
