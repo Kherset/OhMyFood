@@ -1,0 +1,64 @@
+@import './components/colors.scss';
+@import './components/dimensions.scss';
+
+/********** Generales rules **********/
+body {
+  @include custom-background($bg-grey);
+  @include reset-margin-padding;
+  font-family: 'roboto', sans-serif ;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  @include reset-margin-padding;
+}
+
+h1 {
+  font-family: 'shrikhand', sans-serif ;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+/********** Header **********/
+
+@import './sections/header.scss';
+
+/********** Navbar **********/
+
+@import './sections/nav.scss';
+
+/********** Section Fuctioning **********/
+
+@import './sections/functioning.scss';
+
+/********** Main **********/
+
+@import './sections/nav.scss';
+
+.main {
+  background-color: #F6F6F6;
+  height: 600px;
+  padding: 30px 20px 0 20px;
+}
+
+.main__title {
+  margin-bottom: 30px;;
+}

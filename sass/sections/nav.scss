@@ -1,0 +1,33 @@
+@import '../components/buttons.scss';
+@import '../components/colors.scss';
+
+.navbar {
+  @include flex-center-column;
+
+  &__title {
+    margin: 40px 0 20px 0;
+    text-align: center;
+    width: 70%;
+  }
+
+  &__content {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 81%;
+  }
+
+  &__purple-button {
+    @include gradient-color-button;
+
+    &:hover {
+      opacity: 0.7;
+      transition: opacity 0.4s ease-in-out;
+    }
+
+    &--link {
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+    }
+  }
+}

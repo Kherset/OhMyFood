@@ -1,0 +1,9 @@
+@mixin gradient-color-button {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 25px;
+  font-weight: normal;
+  height: 50px;
+  margin-bottom: 50px;
+  width: 55%;
+}

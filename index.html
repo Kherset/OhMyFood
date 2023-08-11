@@ -13,53 +13,53 @@
 <script src="https://kit.fontawesome.com/8f5705fdf5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
+  <header class="header">
+      <div class="header__white-part">
+        <h1 class="header__logo">ohmyfood</h1>
+      </div>
 
-    <div class="header__menu header-menu__white-part">
-      <h1 class="header__logo">ohmyfood</h1>
-    </div>
-
-    <div class="header__menu header-menu__grey-part">
-      <span class="restaurant-location">
-        <i class="rest-loc__icone fa-solid fa-location-dot"></i>
-        <h3 class="rest-loc__city"> Paris, Belleville</h3>
-      </span>
-    </div>
-
+      <div class="header__grey-part">
+        <span class="header__restau-location">
+          <i class="header__location-icon fa-solid fa-location-dot"></i>
+          <h3 class="header__city"> Paris, Belleville</h3>
+        </span>
+      </div>
   </header>
 
   <nav class="navbar">
     <h2 class="navbar__title"> Réservez le menu qui vous convient </h2>
     <p class="navbar__content"> Découvrez des restaurants d’exception, sélectionnés par nos soins. </p>
-    <button class="navbar__purple-button"><a class="navbar__purple-button--a" href="#restaurants">Explorer nos restaurants</a></button>
+    <button class="navbar__purple-button"><a class="navbar__purple-button--link" href="#restaurants">Explorer nos restaurants</a></button>
     <!-- Reste a mettre la redirection du bouton vers les restaurants -->
   </nav>
 
   <section class="functioning">
+
     <h2 class="functioning__title">Fonctionnement</h2>
 
     <div class="fuctionning__choices">
-      <div class="choices__option">
-        <div class="option__content">
-          <span class="option__content-number">1</span>
-          <i class="option__content-icone option__content-icone--phone fa-solid fa-mobile-screen-button"></i>
-          <h3 class="option__content-title">Choisissez un restaurant</h3>
+
+      <div class="functioning__step">
+        <div class="functioning__content">
+          <span class="functioning__step-number">1</span>
+          <i class="functioning__step-icon fa-solid fa-mobile-screen-button"></i>
+          <h3 class="functioning__step-description">Choisissez un restaurant</h3>
         </div>
       </div>
 
-      <div class="choices__option">
-        <div class="option__content">
-          <span class="option__content-number">2</span>
-          <i class="option__content-icone option__content-icone--list fa-solid fa-list-ul"></i>
-          <h3 class="option__content-title"> Composez votre menu</h3>
+      <div class="functioning__step">
+        <div class="functioning__content">
+          <span class="functioning__step-number">2</span>
+          <i class="functioning__step-icon fa-solid fa-list-ul"></i>
+          <h3 class="functioning__step-description"> Composez votre menu</h3>
         </div>
       </div>
 
-      <div class="choices__option">
-        <div class="option__content">
-          <span class="option__content-number">3</span>
-          <i class="option__content-icone option__content-icone--shop fa-solid fa-store"></i>
-          <h3 class="option__content-title">Dégustez au restaurant</h3>
+      <div class="functioning__step">
+        <div class="functioning__content">
+          <span class="functioning__step-number">3</span>
+          <i class="functioning__step-icon functioning__step-icon--shop fa-solid fa-store"></i>
+          <h3 class="functioning__step-description">Dégustez au restaurant</h3>
         </div>
       </div>
     </div>
