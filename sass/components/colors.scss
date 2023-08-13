@@ -10,7 +10,10 @@ $option-grey: #F6F6F6;
 $purple: #9356DC;
 $white: #FFFFFF;
 
+// Gradient colors :
+$pink-purple-gradient: linear-gradient(#FF79DA, #9356DC);
+
 // Backgrounds colors :
 @mixin custom-background($color) {
-  background-color: $color;
+    background-color: $color;
 }

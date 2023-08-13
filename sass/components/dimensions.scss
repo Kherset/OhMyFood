@@ -1,22 +1,22 @@
 @mixin flex-center-column {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @mixin flex-center-row {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 @mixin h50Xl100 { // Hauteur 50px et largueur 100%
-  height: 50px;
-  width: 100%;
+    height: 50px;
+    width: 100%;
 }
 
 @mixin reset-margin-padding {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
