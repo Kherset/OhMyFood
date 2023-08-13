@@ -1,0 +1,13 @@
+@import '../components/cards.scss';
+
+.main {
+    @include card;
+        background-color: #F6F6F6;
+        box-sizing: border-box;
+        height: 1230px;
+        padding: 40px 20px;
+
+    &__title {
+        margin-bottom: 30px;;
+    }
+}

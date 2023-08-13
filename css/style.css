@@ -31,6 +31,11 @@ h4 {
   font-weight: bold;
 }
 
+h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
 p {
   font-size: 18px;
   font-weight: lighter;
@@ -108,6 +113,10 @@ p {
   opacity: 0.7;
   transition: opacity 0.4s ease-in-out;
 }
+.navbar__purple-button:not(:hover) {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
 .navbar__purple-button--link {
   color: white;
   font-size: 16px;
@@ -162,48 +171,89 @@ p {
 }
 .functioning__step-icon--shop {
   color: #9356DC;
-} /********** Main **********/
-.navbar {
-  align-items: center;
+}
+
+/********** Main **********/
+.main {
+  background-color: #F6F6F6;
+  box-sizing: border-box;
+  height: 1230px;
+  padding: 40px 20px;
+}
+.main .card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 251px;
+  margin-bottom: 18px;
+  width: 100%;
+}
+.main .card__image-container {
+  height: 70%;
+  position: relative;
+}
+.main .card__image-container .card__image {
+  border-radius: 15px 15px 0 0;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+.main .card__image-container .card__badge {
+  border-radius: 3px;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 7px 12px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.main .card__content {
+  box-sizing: border-box;
+  display: flex;
+  height: 30%;
+  justify-content: space-between;
+}
+.main .card__content .card__text {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 10px;
+  width: 80%;
 }
-.navbar__title {
-  margin: 40px 0 20px 0;
-  text-align: center;
-  width: 70%;
+.main .card__content .card__title {
+  margin-bottom: 2px;
 }
-.navbar__content {
-  margin-bottom: 30px;
-  text-align: center;
-  width: 81%;
+.main .card__content .card__icon {
+  align-items: center;
+  box-sizing: border-box;
+  color: #101010;
+  cursor: pointer;
+  display: flex;
+  font-size: 22px;
+  font-weight: 200;
+  justify-content: center;
+  width: 20%;
 }
-.navbar__purple-button {
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  border: none;
-  border-radius: 25px;
-  font-weight: normal;
-  height: 50px;
-  margin-bottom: 50px;
-  width: 55%;
+.main .card__content .card__icon i {
+  position: absolute;
 }
-.navbar__purple-button:hover {
-  opacity: 0.7;
-  transition: opacity 0.4s ease-in-out;
+.main .card__content .card__icon--full-heart {
+  opacity: 0;
+  transition-duration: 600ms;
+  transition-property: all;
 }
-.navbar__purple-button--link {
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
+.main .card__content .card__icon--full-heart:hover {
+  background: linear-gradient(#FF79DA, #9356DC); /* Apply a color gradient as the background */
+  -webkit-background-clip: text; /* Same as the following line but for Webkit, enabling Safari and certain Chrome versions to work correctly */
+  background-clip: text; /* Creates a clip in the shape of the text, here forming a heart */
+  color: transparent; /* Makes the 'empty heart' invisible, so we can see the full heart clip */
+  opacity: 1;
 }
-
-.main {
-  background-color: #F6F6F6;
-  height: 600px;
-  padding: 30px 20px 0 20px;
-}
-
 .main__title {
   margin-bottom: 30px;
 }

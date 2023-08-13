@@ -2,39 +2,38 @@
 @import '../components/dimensions.scss';
 
 .header {
-  @include flex-center-column;
-  height: 113px;
-  position: relative;
-  width: 100%;
-
-  &__white-part {
-    @include custom-background($white);
-    @include flex-center-row;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-    height: 63px;
+    @include flex-center-column;
+    height: 113px;
+    position: relative;
     width: 100%;
-    z-index: 1;
-  }
 
-  &__logo {
-    height: 36px;
-    padding: 3px 17px 0 17px;
-  }
+    &__white-part {
+        @include custom-background($white);
+        @include flex-center-row;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+        height: 63px;
+        width: 100%;
+        z-index: 1;
+    }
 
-  &__grey-part {
-    @include custom-background($grey);
-    @include h50Xl100;
+    &__logo {
+        height: 36px;
+        padding: 3px 17px 0 17px;
+    }
 
-  }
+    &__grey-part {
+        @include custom-background($grey);
+        @include h50Xl100;
+    }
 
-  &__restau-location {
-    @include flex-center-row;
-    @include h50Xl100;
-  }
+    &__restau-location {
+        @include flex-center-row;
+        @include h50Xl100;
+    }
 
-  &__location-icon {
-    height: 16px;
-    margin-right: 20px;
-    width: 12px;
-  }
+    &__location-icon {
+        height: 16px;
+        margin-right: 20px;
+        width: 12px;
+    }
 }
