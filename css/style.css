@@ -254,8 +254,48 @@ p {
   color: transparent; /* Makes the 'empty heart' invisible, so we can see the full heart clip */
   opacity: 1;
 }
+.main__restaurant-link {
+  text-decoration: none;
+  color: black;
+}
 .main__title {
   margin-bottom: 30px;
+}
+
+/********** Footer **********/
+.footer {
+  background-color: #353535;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  padding: 20px 0 20px 20px;
+}
+.footer__choices {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+  width: 60%;
+}
+.footer__logo {
+  font-family: "shrikhand", sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.footer__icon-and-link {
+  align-items: center;
+  display: flex;
+}
+.footer__link {
+  font-size: 16px;
+  font-weight: normal;
+}
+.footer__icon {
+  font-size: 12px;
+  margin-right: 10px;
+  width: 12px;
+}
+.footer .fa-handshake {
+  transform: rotate(-35deg);
 }
 
 /*# sourceMappingURL=style.css.map */

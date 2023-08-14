@@ -1,0 +1,42 @@
+@import '../components/colors.scss';
+
+.footer {
+    background-color: $grey-footer;
+    box-sizing: border-box;
+    color: $white;
+    padding: 20px 0 20px 20px;
+
+    &__choices {
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      justify-content: space-between;
+      width: 60%;
+    }
+
+    &__logo {
+      font-family: 'shrikhand', sans-serif;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    &__icon-and-link {
+      align-items: center;
+      display: flex;
+    }
+
+    &__link {
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+    &__icon {
+      font-size: 12px;
+      margin-right: 10px;
+      width: 12px;
+    }
+
+    .fa-handshake {
+      transform: rotate(-35deg);
+    }
+}
