@@ -14,11 +14,22 @@
         height: 63px;
         width: 100%;
         z-index: 1;
+        position: relative;
+    }
+
+    &__back-arrow {
+        @include flex-center-row;
+        box-sizing: border-box;
+        color: $black;
+        font-size: 25px;
+        left: 20px;
+        position: absolute;
+        top: 20px;
     }
 
     &__logo {
+        @include flex-center-row;
         height: 36px;
-        padding: 3px 17px 0 17px;
     }
 
     &__grey-part {

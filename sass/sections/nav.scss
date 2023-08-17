@@ -18,21 +18,5 @@
 
     &__purple-button {
         @include gradient-color-button;
-
-        &:hover {
-            opacity: 0.7;
-            transition: opacity 0.4s ease-in-out;
-        }
-
-        &:not(:hover) {
-            opacity: 1;
-            transition: opacity 0.4s ease-in-out;
-        }
-
-        &--link {
-            color: white;
-            font-size: 16px;
-            text-decoration: none;
-        }
     }
 }

@@ -2,8 +2,25 @@
     background-image: $pink-purple-gradient;
     border: none;
     border-radius: 25px;
+    color: white;
     font-weight: normal;
     height: 50px;
     margin-bottom: 50px;
     width: 55%;
+
+    &:hover {
+        opacity: 0.7;
+        transition: opacity 0.4s ease-in-out;
+    }
+
+    &:not(:hover) {
+        opacity: 1;
+        transition: opacity 0.4s ease-in-out;
+    }
+
+    &--link {
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+    }
 }

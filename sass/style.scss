@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
 }
 
@@ -33,7 +33,7 @@ h4 {
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -42,22 +42,33 @@ p {
     font-weight: lighter;
 }
 
-/********** Header **********/
+/********** Pages **********/
 
-    @import './sections/header.scss';
+    /********** Index **********/
+        /********** Header **********/
+            @import './sections/header.scss';
 
-/********** Navbar **********/
+        /********** Navbar **********/
+            @import './sections/nav.scss';
 
-    @import './sections/nav.scss';
+        /********** Section Fuctioning **********/
+            @import './sections/functioning.scss';
 
-/********** Section Fuctioning **********/
+        /********** Main **********/
+            @import './sections/main.scss';
 
-    @import './sections/functioning.scss';
+        /********** Footer **********/
+            @import './sections/footer.scss';
 
-/********** Main **********/
 
-    @import './sections/main.scss';
+    /********** La palette du gout **********/
+        @import './la-palette-du-gout.scss';
 
-/********** Footer **********/
+    /********** La note enchantée **********/
+        @import './la-note-enchantee.scss';
 
-@import './sections/footer.scss';
+    /********** À la française **********/
+        @import './a-la-francaise.scss';
+
+    /********** Le délice des sens **********/
+        @import './le-delice-des-sens.scss';
