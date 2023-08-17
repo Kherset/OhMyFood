@@ -1,0 +1,22 @@
+@mixin gradient-heart {
+
+    & i {
+      position: absolute;
+    }
+
+    &--full-heart {
+        opacity: 0;
+        transition-duration: 600ms;
+        transition-property: all;
+
+        &:hover {
+          // To keep in this order - start //
+            background: linear-gradient(#FF79DA, #9356DC); /* Apply a color gradient as the background */
+            -webkit-background-clip: text; /* Same as the following line but for Webkit, enabling Safari and certain Chrome versions to work correctly */
+            background-clip: text; /* Creates a clip in the shape of the text, here forming a heart */
+            color: transparent; /* Makes the 'empty heart' invisible, so we can see the full heart clip */
+          // To keep in this order - end //
+            opacity: 1;
+        }
+    }
+}

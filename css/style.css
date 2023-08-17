@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /********** Generales rules **********/
 body {
   background-color: #F3F3F3;
@@ -22,7 +23,7 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: normal;
 }
 
@@ -32,7 +33,7 @@ h4 {
 }
 
 h5 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -41,6 +42,8 @@ p {
   font-weight: lighter;
 }
 
+/********** Pages **********/
+/********** Index **********/
 /********** Header **********/
 .header {
   align-items: center;
@@ -60,10 +63,24 @@ p {
   height: 63px;
   width: 100%;
   z-index: 1;
+  position: relative;
+}
+.header__back-arrow {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #101010;
+  font-size: 25px;
+  left: 20px;
+  position: absolute;
+  top: 20px;
 }
 .header__logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   height: 36px;
-  padding: 3px 17px 0 17px;
 }
 .header__grey-part {
   background-color: #EAEAEA;
@@ -104,6 +121,7 @@ p {
   background-image: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 25px;
+  color: white;
   font-weight: normal;
   height: 50px;
   margin-bottom: 50px;
@@ -127,7 +145,7 @@ p {
 .functioning {
   background-color: #FFFFFF;
   height: 420px;
-  padding: 30px 20px 0 20px;
+  padding: 30px 30px 0 30px;
 }
 .functioning__title {
   margin-bottom: 30px;
@@ -169,7 +187,7 @@ p {
   color: #7E7E7E;
   margin-right: 20px;
 }
-.functioning__step-icon--shop {
+.functioning__step:hover .functioning__step-icon {
   color: #9356DC;
 }
 
@@ -260,6 +278,1046 @@ p {
 }
 .main__title {
   margin-bottom: 30px;
+}
+
+/********** Footer **********/
+.footer {
+  background-color: #353535;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  padding: 20px 0 20px 20px;
+}
+.footer__choices {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+  width: 60%;
+}
+.footer__logo {
+  font-family: "shrikhand", sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.footer__icon-and-link {
+  align-items: center;
+  display: flex;
+}
+.footer__link {
+  font-size: 16px;
+  font-weight: normal;
+}
+.footer__icon {
+  font-size: 12px;
+  margin-right: 10px;
+  width: 12px;
+}
+.footer .fa-handshake {
+  transform: rotate(-35deg);
+}
+
+/********** La palette du gout **********/
+/********** Header **********/
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 113px;
+  position: relative;
+  width: 100%;
+}
+.header__white-part {
+  background-color: #FFFFFF;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  height: 63px;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.header__back-arrow {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #101010;
+  font-size: 25px;
+  left: 20px;
+  position: absolute;
+  top: 20px;
+}
+.header__logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 36px;
+}
+.header__grey-part {
+  background-color: #EAEAEA;
+  height: 50px;
+  width: 100%;
+}
+.header__restau-location {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+}
+.header__location-icon {
+  height: 16px;
+  margin-right: 20px;
+  width: 12px;
+}
+
+.header-menu {
+  height: 53px;
+}
+
+/********** Navbar **********/
+.navbar-menu-la-palette {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 275px;
+}
+
+/********** Main **********/
+.main {
+  border-radius: 25px;
+  height: auto;
+  margin-top: -20px;
+  padding-bottom: 30px;
+}
+.main__dish-card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  height: 72px;
+  margin-bottom: 10px;
+  padding: 15px 15px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.main__dish-card--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.main__dish-card--description {
+  font-size: 15px;
+}
+.main__dish-card .main__dish-card--description, .main__dish-card .main__dish-card--name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.main__dish-card--price {
+  background-color: #FFFFFF;
+  align-items: flex-end;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  height: 42px;
+  width: 15%;
+}
+.main__dish-card--animation {
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -15%;
+  width: 15%;
+}
+.main__dish-card--animation .fa-check {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  color: #99E2D0;
+  padding: 3px;
+}
+.main__dish-card:active .main__dish-card--animation, .main__dish-card:active .main__dish-card--price {
+  transform: translateX(-100%);
+  transition-duration: 400ms;
+}
+.main__dish-card:active .main__dish-card--description, .main__dish-card:active .main__dish-card--name {
+  width: 80%;
+}
+.main__menu-header {
+  display: flex;
+  margin-bottom: 20px;
+}
+.main__menu-title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: "shrikhand", sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  justify-content: flex-start;
+  width: 80%;
+}
+.main__menu-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  width: 20%;
+  cursor: pointer;
+}
+.main__menu-icon i {
+  position: absolute;
+}
+.main__menu-icon--full-heart {
+  opacity: 0;
+  transition-duration: 600ms;
+  transition-property: all;
+}
+.main__menu-icon--full-heart:hover {
+  background: linear-gradient(#FF79DA, #9356DC); /* Apply a color gradient as the background */
+  -webkit-background-clip: text; /* Same as the following line but for Webkit, enabling Safari and certain Chrome versions to work correctly */
+  background-clip: text; /* Creates a clip in the shape of the text, here forming a heart */
+  color: transparent; /* Makes the 'empty heart' invisible, so we can see the full heart clip */
+  opacity: 1;
+}
+.main__dish-categorie {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 20px 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+.main__dish-categorie::after {
+  background-color: #99E2D0;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 40px;
+}
+.main__order-button-container {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+}
+.main__order-button {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: normal;
+  height: 50px;
+  margin-bottom: 50px;
+  width: 55%;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+.main__order-button:hover {
+  opacity: 0.7;
+  transition: opacity 0.4s ease-in-out;
+}
+.main__order-button:not(:hover) {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+.main__order-button--link {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/********** Footer **********/
+.footer {
+  background-color: #353535;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  padding: 20px 0 20px 20px;
+}
+.footer__choices {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+  width: 60%;
+}
+.footer__logo {
+  font-family: "shrikhand", sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.footer__icon-and-link {
+  align-items: center;
+  display: flex;
+}
+.footer__link {
+  font-size: 16px;
+  font-weight: normal;
+}
+.footer__icon {
+  font-size: 12px;
+  margin-right: 10px;
+  width: 12px;
+}
+.footer .fa-handshake {
+  transform: rotate(-35deg);
+}
+
+/********** La note enchantée **********/
+/********** Header **********/
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 113px;
+  position: relative;
+  width: 100%;
+}
+.header__white-part {
+  background-color: #FFFFFF;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  height: 63px;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.header__back-arrow {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #101010;
+  font-size: 25px;
+  left: 20px;
+  position: absolute;
+  top: 20px;
+}
+.header__logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 36px;
+}
+.header__grey-part {
+  background-color: #EAEAEA;
+  height: 50px;
+  width: 100%;
+}
+.header__restau-location {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+}
+.header__location-icon {
+  height: 16px;
+  margin-right: 20px;
+  width: 12px;
+}
+
+.header-menu {
+  height: 53px;
+}
+
+/********** Navbar **********/
+.navbar-menu-la-note-enchante {
+  background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 275px;
+}
+
+/********** Main **********/
+.main {
+  border-radius: 25px;
+  height: auto;
+  margin-top: -20px;
+  padding-bottom: 30px;
+}
+.main__dish-card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  height: 72px;
+  margin-bottom: 10px;
+  padding: 15px 15px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.main__dish-card--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.main__dish-card--description {
+  font-size: 15px;
+}
+.main__dish-card .main__dish-card--description, .main__dish-card .main__dish-card--name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.main__dish-card--price {
+  background-color: #FFFFFF;
+  align-items: flex-end;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  height: 42px;
+  width: 15%;
+}
+.main__dish-card--animation {
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -15%;
+  width: 15%;
+}
+.main__dish-card--animation .fa-check {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  color: #99E2D0;
+  padding: 3px;
+}
+.main__dish-card:active .main__dish-card--animation, .main__dish-card:active .main__dish-card--price {
+  transform: translateX(-100%);
+  transition-duration: 400ms;
+}
+.main__dish-card:active .main__dish-card--description, .main__dish-card:active .main__dish-card--name {
+  width: 80%;
+}
+.main__menu-header {
+  display: flex;
+  margin-bottom: 20px;
+}
+.main__menu-title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: "shrikhand", sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  justify-content: flex-start;
+  width: 80%;
+}
+.main__menu-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  width: 20%;
+  cursor: pointer;
+}
+.main__menu-icon i {
+  position: absolute;
+}
+.main__menu-icon--full-heart {
+  opacity: 0;
+  transition-duration: 600ms;
+  transition-property: all;
+}
+.main__menu-icon--full-heart:hover {
+  background: linear-gradient(#FF79DA, #9356DC); /* Apply a color gradient as the background */
+  -webkit-background-clip: text; /* Same as the following line but for Webkit, enabling Safari and certain Chrome versions to work correctly */
+  background-clip: text; /* Creates a clip in the shape of the text, here forming a heart */
+  color: transparent; /* Makes the 'empty heart' invisible, so we can see the full heart clip */
+  opacity: 1;
+}
+.main__dish-categorie {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 20px 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+.main__dish-categorie::after {
+  background-color: #99E2D0;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 40px;
+}
+.main__order-button-container {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+}
+.main__order-button {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: normal;
+  height: 50px;
+  margin-bottom: 50px;
+  width: 55%;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+.main__order-button:hover {
+  opacity: 0.7;
+  transition: opacity 0.4s ease-in-out;
+}
+.main__order-button:not(:hover) {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+.main__order-button--link {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/********** Footer **********/
+.footer {
+  background-color: #353535;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  padding: 20px 0 20px 20px;
+}
+.footer__choices {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+  width: 60%;
+}
+.footer__logo {
+  font-family: "shrikhand", sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.footer__icon-and-link {
+  align-items: center;
+  display: flex;
+}
+.footer__link {
+  font-size: 16px;
+  font-weight: normal;
+}
+.footer__icon {
+  font-size: 12px;
+  margin-right: 10px;
+  width: 12px;
+}
+.footer .fa-handshake {
+  transform: rotate(-35deg);
+}
+
+/********** À la française **********/
+/********** Header **********/
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 113px;
+  position: relative;
+  width: 100%;
+}
+.header__white-part {
+  background-color: #FFFFFF;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  height: 63px;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.header__back-arrow {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #101010;
+  font-size: 25px;
+  left: 20px;
+  position: absolute;
+  top: 20px;
+}
+.header__logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 36px;
+}
+.header__grey-part {
+  background-color: #EAEAEA;
+  height: 50px;
+  width: 100%;
+}
+.header__restau-location {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+}
+.header__location-icon {
+  height: 16px;
+  margin-right: 20px;
+  width: 12px;
+}
+
+.header-menu {
+  height: 53px;
+}
+
+/********** Navbar **********/
+.navbar-men-a-la-francaise {
+  background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 275px;
+}
+
+/********** Main **********/
+.main {
+  border-radius: 25px;
+  height: auto;
+  margin-top: -20px;
+  padding-bottom: 30px;
+}
+.main__dish-card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  height: 72px;
+  margin-bottom: 10px;
+  padding: 15px 15px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.main__dish-card--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.main__dish-card--description {
+  font-size: 15px;
+}
+.main__dish-card .main__dish-card--description, .main__dish-card .main__dish-card--name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.main__dish-card--price {
+  background-color: #FFFFFF;
+  align-items: flex-end;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  height: 42px;
+  width: 15%;
+}
+.main__dish-card--animation {
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -15%;
+  width: 15%;
+}
+.main__dish-card--animation .fa-check {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  color: #99E2D0;
+  padding: 3px;
+}
+.main__dish-card:active .main__dish-card--animation, .main__dish-card:active .main__dish-card--price {
+  transform: translateX(-100%);
+  transition-duration: 400ms;
+}
+.main__dish-card:active .main__dish-card--description, .main__dish-card:active .main__dish-card--name {
+  width: 80%;
+}
+.main__menu-header {
+  display: flex;
+  margin-bottom: 20px;
+}
+.main__menu-title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: "shrikhand", sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  justify-content: flex-start;
+  width: 80%;
+}
+.main__menu-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  width: 20%;
+  cursor: pointer;
+}
+.main__menu-icon i {
+  position: absolute;
+}
+.main__menu-icon--full-heart {
+  opacity: 0;
+  transition-duration: 600ms;
+  transition-property: all;
+}
+.main__menu-icon--full-heart:hover {
+  background: linear-gradient(#FF79DA, #9356DC); /* Apply a color gradient as the background */
+  -webkit-background-clip: text; /* Same as the following line but for Webkit, enabling Safari and certain Chrome versions to work correctly */
+  background-clip: text; /* Creates a clip in the shape of the text, here forming a heart */
+  color: transparent; /* Makes the 'empty heart' invisible, so we can see the full heart clip */
+  opacity: 1;
+}
+.main__dish-categorie {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 20px 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+.main__dish-categorie::after {
+  background-color: #99E2D0;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 40px;
+}
+.main__order-button-container {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+}
+.main__order-button {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: normal;
+  height: 50px;
+  margin-bottom: 50px;
+  width: 55%;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+.main__order-button:hover {
+  opacity: 0.7;
+  transition: opacity 0.4s ease-in-out;
+}
+.main__order-button:not(:hover) {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+.main__order-button--link {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/********** Footer **********/
+.footer {
+  background-color: #353535;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  padding: 20px 0 20px 20px;
+}
+.footer__choices {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+  width: 60%;
+}
+.footer__logo {
+  font-family: "shrikhand", sans-serif;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.footer__icon-and-link {
+  align-items: center;
+  display: flex;
+}
+.footer__link {
+  font-size: 16px;
+  font-weight: normal;
+}
+.footer__icon {
+  font-size: 12px;
+  margin-right: 10px;
+  width: 12px;
+}
+.footer .fa-handshake {
+  transform: rotate(-35deg);
+}
+
+/********** Le délice des sens **********/
+/********** Header **********/
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 113px;
+  position: relative;
+  width: 100%;
+}
+.header__white-part {
+  background-color: #FFFFFF;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  height: 63px;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.header__back-arrow {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #101010;
+  font-size: 25px;
+  left: 20px;
+  position: absolute;
+  top: 20px;
+}
+.header__logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 36px;
+}
+.header__grey-part {
+  background-color: #EAEAEA;
+  height: 50px;
+  width: 100%;
+}
+.header__restau-location {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+}
+.header__location-icon {
+  height: 16px;
+  margin-right: 20px;
+  width: 12px;
+}
+
+.header-menu {
+  height: 53px;
+}
+
+/********** Navbar **********/
+.navbar-menu-le-delice-des-sens {
+  background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 275px;
+}
+
+/********** Main **********/
+.main {
+  border-radius: 25px;
+  height: auto;
+  margin-top: -20px;
+  padding-bottom: 30px;
+}
+.main__dish-card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  height: 72px;
+  margin-bottom: 10px;
+  padding: 15px 15px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.main__dish-card--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.main__dish-card--description {
+  font-size: 15px;
+}
+.main__dish-card .main__dish-card--description, .main__dish-card .main__dish-card--name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.main__dish-card--price {
+  background-color: #FFFFFF;
+  align-items: flex-end;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  height: 42px;
+  width: 15%;
+}
+.main__dish-card--animation {
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -15%;
+  width: 15%;
+}
+.main__dish-card--animation .fa-check {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  color: #99E2D0;
+  padding: 3px;
+}
+.main__dish-card:active .main__dish-card--animation, .main__dish-card:active .main__dish-card--price {
+  transform: translateX(-100%);
+  transition-duration: 400ms;
+}
+.main__dish-card:active .main__dish-card--description, .main__dish-card:active .main__dish-card--name {
+  width: 80%;
+}
+.main__menu-header {
+  display: flex;
+  margin-bottom: 20px;
+}
+.main__menu-title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: "shrikhand", sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  justify-content: flex-start;
+  width: 80%;
+}
+.main__menu-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  width: 20%;
+  cursor: pointer;
+}
+.main__menu-icon i {
+  position: absolute;
+}
+.main__menu-icon--full-heart {
+  opacity: 0;
+  transition-duration: 600ms;
+  transition-property: all;
+}
+.main__menu-icon--full-heart:hover {
+  background: linear-gradient(#FF79DA, #9356DC); /* Apply a color gradient as the background */
+  -webkit-background-clip: text; /* Same as the following line but for Webkit, enabling Safari and certain Chrome versions to work correctly */
+  background-clip: text; /* Creates a clip in the shape of the text, here forming a heart */
+  color: transparent; /* Makes the 'empty heart' invisible, so we can see the full heart clip */
+  opacity: 1;
+}
+.main__dish-categorie {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 20px 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+.main__dish-categorie::after {
+  background-color: #99E2D0;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 40px;
+}
+.main__order-button-container {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+}
+.main__order-button {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: normal;
+  height: 50px;
+  margin-bottom: 50px;
+  width: 55%;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+.main__order-button:hover {
+  opacity: 0.7;
+  transition: opacity 0.4s ease-in-out;
+}
+.main__order-button:not(:hover) {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+.main__order-button--link {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 /********** Footer **********/
