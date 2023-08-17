@@ -1,5 +1,5 @@
 /********** Header **********/
-    @import './sections/header.scss';
+    @import '../base-components/header.scss';
 
     .header-menu {
       height: 53px
@@ -15,7 +15,7 @@
     }
 
 /********** Main **********/
-    @import './components/dish-card.scss';
+    @import '../components/dish-card.scss';
 
 
     .main {
@@ -83,4 +83,4 @@
     }
 
 /********** Footer **********/
-    @import './sections/footer.scss';
+    @import '../base-components/footer.scss';
