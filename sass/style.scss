@@ -46,29 +46,29 @@ p {
 
     /********** Index **********/
         /********** Header **********/
-            @import './sections/header.scss';
+            @import './base-components/header.scss';
 
         /********** Navbar **********/
-            @import './sections/nav.scss';
+            @import './base-components/nav.scss';
 
         /********** Section Fuctioning **********/
-            @import './sections/functioning.scss';
+            @import './base-components/functioning.scss';
 
         /********** Main **********/
-            @import './sections/main.scss';
+            @import './base-components/main.scss';
 
         /********** Footer **********/
-            @import './sections/footer.scss';
+            @import './base-components/footer.scss';
 
 
     /********** La palette du gout **********/
-        @import './la-palette-du-gout.scss';
+        @import './restaurants-pages/la-palette-du-gout.scss';
 
     /********** La note enchantée **********/
-        @import './la-note-enchantee.scss';
+        @import './restaurants-pages/la-note-enchantee.scss';
 
     /********** À la française **********/
-        @import './a-la-francaise.scss';
+        @import './restaurants-pages/a-la-francaise.scss';
 
     /********** Le délice des sens **********/
-        @import './le-delice-des-sens.scss';
+        @import './restaurants-pages/le-delice-des-sens.scss';
