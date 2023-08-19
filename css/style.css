@@ -1594,7 +1594,7 @@ p {
   }
 }
 .image-a-la-francaise {
-  background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   height: 275px;
   background-position: center;
   background-repeat: no-repeat;
