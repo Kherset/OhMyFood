@@ -1,73 +1,73 @@
 @mixin dish-card {
 
-  &__dish-card {
-      background-color: $white;
-      border-radius: 15px;
-      box-sizing: border-box;
-      display: flex;
-      height: 72px;
-      margin-bottom: 10px;
-      padding: 15px 15px;
-      width: 100%;
-      position: relative;
-      overflow: hidden;
-
-    &--text{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    &--description {
-        font-size: 15px;
-    }
-
-    .main__dish-card--description, .main__dish-card--name{
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-
-    &--price {
+    &__dish-card {
         background-color: $white;
-        align-items: flex-end;
-        display: flex;
-        font-size: 15px;
-        justify-content: center;
-        height: 42px;
-        width: 15%;
-    }
-
-    &--animation {
-        align-items: center;
-        background-color: $light-green;
-        border-radius: 0 15px 15px 0;
+        border-radius: 15px;
+        box-sizing: border-box;
         display: flex;
         height: 72px;
-        justify-content: center;
-        position:absolute;
-        top: 0;
-        right: -15%;
-        width: 15%;
+        margin-bottom: 10px;
+        overflow: hidden;
+        padding: 15px 15px;
+        position: relative;
+        width: 100%;
 
-        .fa-check {
+        &--text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &--description {
+            font-size: 15px;
+        }
+
+        .main__dish-card--description, .main__dish-card--name{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        &--price {
+            align-items: flex-end;
             background-color: $white;
-            border-radius: 50%;
-            color: $light-green;
-            padding: 3px;
+            display: flex;
+            font-size: 15px;
+            height: 42px;
+            justify-content: center;
+            width: 15%;
+        }
+
+        &--animation {
+            align-items: center;
+            background-color: $light-green;
+            border-radius: 0 15px 15px 0;
+            display: flex;
+            height: 72px;
+            justify-content: center;
+            position:absolute;
+            right: -15%;
+            top: 0;
+            width: 15%;
+
+            .fa-check {
+                background-color: $white;
+                border-radius: 50%;
+                color: $light-green;
+                padding: 3px;
+            }
+        }
+
+        &:active {
+            .main__dish-card--animation, .main__dish-card--price {
+                transform: translateX(-100%);
+                transition-duration: 400ms;
+            }
+
+            .main__dish-card--description, .main__dish-card--name{
+                width: 80%;
+            }
         }
     }
-
-    &:active {
-      .main__dish-card--animation, .main__dish-card--price {
-          transform: translateX(-100%);
-          transition-duration: 400ms;
-      }
-
-      .main__dish-card--description, .main__dish-card--name{
-          width: 80%;
-      }
-    }
-  }
 }

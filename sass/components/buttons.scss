@@ -1,14 +1,21 @@
 @mixin gradient-color-button {
+    align-items: center;
     background-image: $pink-purple-gradient;
     border: none;
     border-radius: 25px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
     color: white;
+    display: flex;
+    font-size: 16px;
     font-weight: normal;
     height: 50px;
+    justify-content: center;
     margin-bottom: 50px;
+    text-decoration: none;
     width: 55%;
 
     &:hover {
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
         opacity: 0.7;
         transition: opacity 0.4s ease-in-out;
     }
@@ -16,11 +23,5 @@
     &:not(:hover) {
         opacity: 1;
         transition: opacity 0.4s ease-in-out;
-    }
-
-    &--link {
-      color: white;
-      font-size: 16px;
-      text-decoration: none;
     }
 }

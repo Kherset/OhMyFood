@@ -1,0 +1,22 @@
+.sections-menu {
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+}
+
+.section-starters {
+    animation-delay: 500ms;
+}
+
+.section-main-courses {
+    animation-delay: 1200ms;
+}
+
+.section-dessert {
+    animation-delay: 1900ms;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

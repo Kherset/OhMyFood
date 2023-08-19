@@ -1,0 +1,114 @@
+@import '../../sass/components/colors.scss';
+
+/********** Header **********/
+@import '../base-components/header.scss';
+
+.header-menu {
+    height: 53px
+}
+
+/********** Navbar **********/
+.navbar-menu {
+    height: 275px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: 1440px) {
+        height: 500px;
+    }
+}
+
+/********** Main **********/
+@import '../components/dish-card.scss';
+@import '../components/menu-fadein.scss';
+
+
+.main {
+    @include dish-card;
+    border-radius: 25px;
+    height: auto;
+    margin-top: -20px;
+    padding-bottom: 30px;
+
+
+    &__menu-header {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &__menu-title {
+        @include flex-center-row;
+        font-family: 'shrikhand', sans-serif;
+        font-size: 28px;
+        font-style: italic;
+        font-weight: 400;
+        justify-content: flex-start;
+        width: 80%;
+    }
+
+    &__menu-header {
+        @media (min-width: 1440px) {
+            padding: 0 25%;
+            width: 50%;
+        }
+    }
+
+    &__menu-icon {
+        @include gradient-heart;
+        @include flex-center-row;
+        font-size: 30px;
+        width: 20%;
+        cursor: pointer;
+    }
+
+    &__dish-categorie {
+        font-size: 16px;
+        font-weight: lighter;
+        margin: 20px 0;
+        padding-bottom: 10px; // padding space to separate title and line.
+        position: relative;
+
+        &::after { //It's a pseudo-element that allows to add content or, here, decoration after the content of an HTML element, without needing to modify the HTML
+            background-color: $light-green;
+            bottom: 0;
+            content: ""; // Indicates that no text content is generated for this element.
+            height: 3px;
+            left: 0;
+            position: absolute;
+            width: 40px;
+        }
+    }
+
+    &__order-button-container {
+        align-items: center;
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__order-button {
+        @include gradient-color-button;
+        font-weight: 600;
+        margin-bottom: 0px;
+
+        @media (min-width: 1440px) {
+            width: 200px;
+        }
+    }
+}
+
+/********** Footer **********/
+@import '../base-components/footer.scss';
+
+@media (min-width: 1440px) {
+    .main-menu {
+        margin: -30px 150px;
+        padding: 30px 200px;
+    }
+
+    .background-menu {
+        @include custom-background($white);
+    }
+}
