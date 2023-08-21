@@ -9,7 +9,7 @@
         transition-duration: 600ms;
         transition-property: all;
 
-        &:hover {
+        &:hover{
           // To keep in this order - start //
             background: linear-gradient(#FF79DA, #9356DC); /* Apply a color gradient as the background */
             -webkit-background-clip: text; /* Same as the following line but for Webkit, enabling Safari and certain Chrome versions to work correctly */

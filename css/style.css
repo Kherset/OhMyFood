@@ -266,7 +266,7 @@ p {
   color: #7E7E7E;
   margin-right: 20px;
 }
-.functioning__step:hover .functioning__step-icon {
+.functioning__step:active .functioning__step-icon {
   color: #9356DC;
 }
 @media (min-width: 1440px) {
