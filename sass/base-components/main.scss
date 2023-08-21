@@ -9,10 +9,9 @@
 
     &__restaurant-link {
         color: black;
-        display: inline-block;
+        display: block;
         position: relative;
         text-decoration: none;
-        z-index: 2;
     }
 
     &__title {

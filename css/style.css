@@ -55,7 +55,6 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
 }
 
 .loader {
@@ -360,10 +359,9 @@ p {
 }
 .main__restaurant-link {
   color: black;
-  display: inline-block;
+  display: block;
   position: relative;
   text-decoration: none;
-  z-index: 2;
 }
 .main__title {
   margin-bottom: 90px;
@@ -599,7 +597,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
 }
 .main__dish-card--description {
   font-size: 15px;
@@ -975,7 +973,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
 }
 .main__dish-card--description {
   font-size: 15px;
@@ -1351,7 +1349,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
 }
 .main__dish-card--description {
   font-size: 15px;
@@ -1727,7 +1725,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
 }
 .main__dish-card--description {
   font-size: 15px;
