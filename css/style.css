@@ -55,7 +55,6 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  pointer-events: none;
 }
 
 .loader {
@@ -184,6 +183,7 @@ p {
   margin-bottom: 50px;
   text-decoration: none;
   width: 55%;
+  z-index: 2;
 }
 .navbar__purple-button:hover {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
@@ -211,6 +211,7 @@ p {
   background-color: #FFFFFF;
   height: 420px;
   padding: 30px 60px 0 60px;
+  z-index: 2;
 }
 .functioning__title {
   margin-bottom: 30px;
