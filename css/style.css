@@ -423,13 +423,13 @@ p {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 5px;
-  position: absolute;
-  z-index: 1;
 }
 .footer__link a {
   color: #FFFFFF;
   cursor: pointer;
   text-decoration: none;
+  position: relative;
+  z-index: 1;
 }
 .footer__icon {
   font-size: 12px;
@@ -779,13 +779,13 @@ p {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 5px;
-  position: absolute;
-  z-index: 1;
 }
 .footer__link a {
   color: #FFFFFF;
   cursor: pointer;
   text-decoration: none;
+  position: relative;
+  z-index: 1;
 }
 .footer__icon {
   font-size: 12px;
@@ -1157,13 +1157,13 @@ p {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 5px;
-  position: absolute;
-  z-index: 1;
 }
 .footer__link a {
   color: #FFFFFF;
   cursor: pointer;
   text-decoration: none;
+  position: relative;
+  z-index: 1;
 }
 .footer__icon {
   font-size: 12px;
@@ -1535,13 +1535,13 @@ p {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 5px;
-  position: absolute;
-  z-index: 1;
 }
 .footer__link a {
   color: #FFFFFF;
   cursor: pointer;
   text-decoration: none;
+  position: relative;
+  z-index: 1;
 }
 .footer__icon {
   font-size: 12px;
@@ -1913,13 +1913,13 @@ p {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 5px;
-  position: absolute;
-  z-index: 1;
 }
 .footer__link a {
   color: #FFFFFF;
   cursor: pointer;
   text-decoration: none;
+  position: relative;
+  z-index: 1;
 }
 .footer__icon {
   font-size: 12px;
