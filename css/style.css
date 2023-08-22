@@ -423,6 +423,8 @@ p {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 5px;
+  position: absolute;
+  z-index: 1;
 }
 .footer__link a {
   color: #FFFFFF;
@@ -777,6 +779,8 @@ p {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 5px;
+  position: absolute;
+  z-index: 1;
 }
 .footer__link a {
   color: #FFFFFF;
@@ -1153,6 +1157,8 @@ p {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 5px;
+  position: absolute;
+  z-index: 1;
 }
 .footer__link a {
   color: #FFFFFF;
@@ -1529,6 +1535,8 @@ p {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 5px;
+  position: absolute;
+  z-index: 1;
 }
 .footer__link a {
   color: #FFFFFF;
@@ -1905,6 +1913,8 @@ p {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 5px;
+  position: absolute;
+  z-index: 1;
 }
 .footer__link a {
   color: #FFFFFF;
