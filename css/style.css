@@ -55,7 +55,6 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3;
 }
 
 .loader {
@@ -70,6 +69,10 @@ p {
 @keyframes fadeOut {
   0% {
     opacity: 1;
+    z-index: 3;
+  }
+  99% {
+    z-index: 3;
   }
   100% {
     opacity: 0;
