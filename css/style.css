@@ -64,6 +64,7 @@ p {
   border-top: 5px solid #9356DC;
   height: 50px;
   width: 50px;
+  z-index: 3;
 }
 
 @keyframes fadeOut {
@@ -211,7 +212,6 @@ p {
   background-color: #FFFFFF;
   height: 420px;
   padding: 30px 40px 0 40px;
-  z-index: 2;
 }
 .functioning__title {
   margin-bottom: 30px;
@@ -248,6 +248,7 @@ p {
   margin-bottom: 20px;
   padding: 10px 0;
   width: 100%;
+  z-index: 2;
 }
 @media (min-width: 1440px) {
   .functioning__step {
