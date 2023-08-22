@@ -77,7 +77,7 @@ p {
   }
   100% {
     opacity: 0;
-    z-index: -1;
+    display: none;
   }
 }
 @keyframes spin {
@@ -87,7 +87,7 @@ p {
   }
   100% {
     transform: rotate(360deg);
-    z-index: -1;
+    display: none;
   }
 }
 /********** Index **********/
