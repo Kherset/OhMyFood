@@ -1,11 +1,12 @@
 @import '../components/cards.scss';
 
 .main {
+
     @include card;
         background-color: #F6F6F6;
         box-sizing: border-box;
         height: 1230px;
-        padding: 40px 60px;
+        padding: 30px 40px;
 
     &__restaurant-link {
         color: black;
@@ -15,12 +16,12 @@
     }
 
     &__title {
-        margin-bottom: 90px;
+        margin-bottom: 30px;
     }
 
     @media (min-width: 1440px) {
 
-        padding: 30px 150px;
+        padding: 30px 150px 20px 150px;
         box-sizing: border-box;
 
         &__cards {
