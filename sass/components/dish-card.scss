@@ -4,6 +4,7 @@
         background-color: $white;
         border-radius: 15px;
         box-sizing: border-box;
+        cursor: pointer;
         display: flex;
         height: 72px;
         margin-bottom: 10px;
@@ -59,7 +60,7 @@
             }
         }
 
-        &:active {
+        &:hover {
             .main__dish-card--animation, .main__dish-card--price {
                 transform: translateX(-100%);
                 transition-duration: 400ms;

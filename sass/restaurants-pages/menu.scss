@@ -43,7 +43,7 @@
     }
 
     &__menu-header {
-        @media (min-width: 1440px) {
+        @media (min-width: 1024px) {
             padding: 0 25%;
             width: 50%;
         }
@@ -88,7 +88,7 @@
         font-weight: 600;
         margin-bottom: 0px;
 
-        @media (min-width: 1440px) {
+        @media (min-width: 1024px) {
             width: 200px;
         }
     }
@@ -97,7 +97,7 @@
 /********** Footer **********/
 @import '../base-components/footer.scss';
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     .main-menu {
         margin: -30px 150px;
         padding: 30px 200px;
@@ -106,4 +106,13 @@
     .background-menu {
         @include custom-background($white);
     }
+
+    .main {
+
+      &__menu-header {
+          justify-content: space-between;
+          padding: 0;
+          width: 100%;
+      }
+  }
 }
